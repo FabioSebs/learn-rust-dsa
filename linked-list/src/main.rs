@@ -22,7 +22,7 @@ struct LinkedList {
 
 impl LinkedList {
     fn new(val: u8) -> LinkedList {
-        let mut head = Box::new(Node::new(val, Option::Some(0 as u8)));
+        let mut head = Box::new(Node::new(val, Option::Some(0)));
         let raw_tail: *mut Node = &mut *head;
 
         LinkedList {
