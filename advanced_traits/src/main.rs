@@ -31,7 +31,7 @@ impl Greet for Cat {
 
 impl Animal for Cat {
     fn create_noise(&self) -> String {
-        format!("MEOWW!")
+        String::from("MEOWW")
     }
 }
 
